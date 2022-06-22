@@ -24,16 +24,4 @@ const makeGallery = images
   })
   .join('');
 
-// const makeGallery = images.map(image => {
-//   const listItemEl = document.createElement('li');
-
-//   const galleryImageEl = document.createElement('img');
-//   galleryImageEl.classList.add('galleryImage');
-//   galleryImageEl.src = image.url;
-//   galleryImageEl.alt = image.alt;
-
-//   listItemEl.append(galleryImageEl);
-//   return listItemEl;
-// });
 galleryRef.insertAdjacentHTML('afterbegin', makeGallery);
-// console.log(makeGallery);
